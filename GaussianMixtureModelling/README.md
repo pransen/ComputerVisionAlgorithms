@@ -55,7 +55,7 @@ The step-wise approach is as follows:
 2. Stack the frames in an array where the final array dimensions will be *(num_frames, image_width, image_height, num_channels)*
 3. Initialize a dummy background image of the same size as that of the individual frames.
 4. For each point characterized by the x-coordinate, the y-coordinate and the channel, model the intensity value across all the frames as a mixture of two Gaussians.
-5. Once modelled, initialize the intensity value at the corresponding location in the dummy background image with the mean of the most weighted cluster. The most weighted cluster will be the one coming from the background whereas owing to the dynamically changing and sparse nature of the foreground, the other cluster will be voted less.
+5. Once modelled, initialize the intensity value at the corresponding location in the dummy background image with the mean of the most weighted cluster. The most weighted cluster will be the one coming from the background whereas owing to the dynamically changing and sparse nature of the foreground, the other cluster will be weighted less.
 6. Finally, the background image will contain the intensity values corresponding to the static background.
 
 **Results:**  
