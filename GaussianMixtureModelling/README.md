@@ -34,7 +34,7 @@ Each of these clusters are parameterized by the cluster mean (μ), the covarianv
 
 Couple of recommended articles on Gaussian Mixture Modelling are provided in the reference section. It is recommended to read those articles to gain better understanding of how we will leverage GMMs for background modelling.
 
-###Background Modelling
+### Background Modelling
 Background modelling is the task of extracting the static background from a sequence of video frames. As shown in the video below, the background consists of the road which gets hidden occassionally owing to foreground variations caused by the moving vehicles. 
 
 ![](./resources/traffic.gif) 
