@@ -38,24 +38,24 @@ Couple of recommended articles on Gaussian Mixture Modelling are provided in the
 ***
 
 ### Background Modelling
-Background modelling is the task of extracting the static background from a sequence of video frames. Once the background has been modelled, a technique called background subtraction which allows an image's foreground to be extracted for further processing (object recognition etc.) is generally used. Hence, background modelling forms an integral part of foreground detection and analysis.
+Background modelling is the task of extracting the static background from a sequence of video frames. Once the background has been modelled, a technique called background subtraction which allows an image's foreground to be extracted for further processing (object recognition etc.) is generally used. Hence, background modelling forms an integral part of foreground extraction and analysis.
 
-As shown in the video below, the background consists of the road which gets hidden occassionally owing to foreground variations caused by the moving vehicles. 
+As shown in the video below, the background consists of the road which gets hidden occassionally owing to variations in the foreground caused by the moving vehicles. 
 
 ![](./resources/traffic.gif) 
 
 The vehicles constitutes the foreground here and their dynamic nature accounts for the variation in intensity levels of points on the road.
 The end result of this exercise would be an image (frame) where there will be no vehicles, i.e, an image devoid of the dynamic foreground.
 
-We are going to model each point in space for all the three image channels, namely R, G and B as a bimodal distribution of Gaussians, where one Gaussian in the mixture accounts for the background and the other for the foreground.
+We are going to model each point in space for all the three image channels, namely **R**, **G** and **B** as a bimodal distribution of Gaussians, where one Gaussian in the mixture accounts for the background and the other for the foreground.
 
 **Algorithm:**  
 The step-wise approach is as follows:
-1. Extract frames from the video and store them to disc.
-2. Load the frames onto memory and stack them in an array where the final array dimensions will be *(num_frames, image_width, image_height, num_channels)*
-3. Initialize a dummy background image of the same size as the individual frames.
-4. For each point characterized by the x coordinate, the y-coordinate and the channels, model the intensity values as a mixture of two Gaussians.
-5. Once modelled, initialize the intensity value at the corresponding location in the dummy background image with the mean of the most wedighted cluster. The most weighted cluster will be the one coming from the background whereas owing to the dynamically changing foreground, the other cluster will be voted less.
+1. Extract frames from the video.
+2. Stack the frames in an array where the final array dimensions will be *(num_frames, image_width, image_height, num_channels)*
+3. Initialize a dummy background image of the same size as that of the individual frames.
+4. For each point characterized by the x coordinate, the y-coordinate and the channel, model the intensity value across all the frames as a mixture of two Gaussians.
+5. Once modelled, initialize the intensity value at the corresponding location in the dummy background image with the mean of the most weighted cluster. The most weighted cluster will be the one coming from the background whereas owing to the dynamically changing and sparse nature of the foreground, the other cluster will be voted less.
 6. Finally, the background image will contain the intensity values corresponding to the static background.
 
 **Results:**  
