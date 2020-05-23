@@ -10,7 +10,7 @@ As shown in the figure below, each point on the image is mapped to an intensity 
 ![](./frames/frame_11.png) 
 
 For an 8-bit encoded image, intensity levels can have 2 ^ 8 values, i.e, from 0-255. 
-For a grayscale image, **I ** can have values in the range [0, 255]
+For a grayscale image, **I** can have values in the range [0, 255]
 For a color image, each point in space takes 3 values in the range [0, 255] for the 3 color channels, R, G and B. 
 ***
 
