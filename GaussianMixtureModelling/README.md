@@ -23,6 +23,7 @@ As shown in the video below, the intensity at a point (on the road) not only is 
 
 ![](./resources/traffic.gif) 
 
+***
 ### Gaussian Mixture Modelling (GMM)
 Gaussian Mixture Modelling is the method of modelling data as a weighted sum of Gaussians. 
 
@@ -34,8 +35,12 @@ Each of these clusters are parameterized by the cluster mean (μ), the covarianv
 
 Couple of recommended articles on Gaussian Mixture Modelling are provided in the reference section. It is recommended to read those articles to gain better understanding of how we will leverage GMMs for background modelling.
 
+***
+
 ### Background Modelling
-Background modelling is the task of extracting the static background from a sequence of video frames. As shown in the video below, the background consists of the road which gets hidden occassionally owing to foreground variations caused by the moving vehicles. 
+Background modelling is the task of extracting the static background from a sequence of video frames. Once the background has been modelled, a technique called background subtraction which allows an image's foreground to be extracted for further processing (object recognition etc.) is generally used. Hence, background modelling forms an integral part of foreground detection and analysis.
+
+As shown in the video below, the background consists of the road which gets hidden occassionally owing to foreground variations caused by the moving vehicles. 
 
 ![](./resources/traffic.gif) 
 
@@ -60,7 +65,9 @@ The following image is obtained on successful execution of the algorithm describ
 
 Note that the image is devoid of any vehicles.
 
+***
 
 ### References:
 1. http://statweb.stanford.edu/~tibs/stat315a/LECTURES/em.pdf
 2. https://medium.com/clustering-with-gaussian-mixture-model/clustering-with-gaussian-mixture-model-c695b6cd60da
+3. Matlab toolbox for the video 'traffic.avi'
