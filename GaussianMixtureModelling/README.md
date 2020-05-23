@@ -61,6 +61,6 @@ The following image is obtained on successful execution of the algorithm describ
 Note that the image is devoid of any vehicles.
 
 
-###References:
+### References:
 1. http://statweb.stanford.edu/~tibs/stat315a/LECTURES/em.pdf
 2. https://medium.com/clustering-with-gaussian-mixture-model/clustering-with-gaussian-mixture-model-c695b6cd60da
