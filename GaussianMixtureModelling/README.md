@@ -1,6 +1,6 @@
-#Background Extraction from videos using Gaussian Mixture Models
+# Background Extraction from videos using Gaussian Mixture Models
 ***
-###Basics of Images and Videos
+### Basics of Images and Videos
 An image can be digitally represented as a function of space as shown below:
 ***I = f(x, y)***
 *where **x** and ** y** are points is space and **I** represents the intensity. **f** is a mapping of points in space to the corresponding intensity values.*
@@ -23,7 +23,7 @@ As shown in the video below, the intensity at a point (on the road) not only is 
 
 ![](/home/prantik/Desktop/ComputerVision/GaussianMixtureModelling/ezgif-4-09ebca40c0a2.gif) 
 
-###Gaussian Mixture Modelling (GMM)
+### Gaussian Mixture Modelling (GMM)
 Gaussian Mixture Modelling is the method of modelling data as a weighted sum of Gaussians. 
 
 GMMs are widely used to cluster data, where each point in the n-dimensional feature space gets associated with each of the clusters with a certain probability, unlike in k-means clustering, where a point in the feature space gets associated with only a single cluster, 
