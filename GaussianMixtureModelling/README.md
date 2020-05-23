@@ -7,7 +7,7 @@ An image can be digitally represented as a function of space as shown below:
 
 As shown in the figure below, each point on the image is mapped to an intensity value which is the color that we see at that particular point.
 
-![](./frames/frame_11.png) 
+![](./resources/frame_11.png) 
 
 For an 8-bit encoded image, intensity levels can have 2 ^ 8 values, i.e, from 0-255.   
 For a grayscale image, each point in space can have values in the range [0, 255].  
