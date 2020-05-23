@@ -7,7 +7,7 @@ An image can be digitally represented as a function of space as shown below:
 
 As shown in the figure below, each point on the image is mapped to an intensity value which is the color that we see at that particular point.
 
-![](/home/prantik/Desktop/ComputerVision/GaussianMixtureModelling/frames/frame_11.png) 
+![](./frames/frame_11.png) 
 
 For an 8-bit encoded image, intensity levels can have 2 ^ 8 values, i.e, from 0-255. 
 For a grayscale image, **I ** can have values in the range [0, 255]
@@ -21,7 +21,7 @@ A video on the other hand varies both in space and time as shown in the equation
 
 As shown in the video below, the intensity at a point (on the road) not only is a function of the x and y cordinates of that point but is also a function of time. It is time that determines whether the intensity value is contributed by a vehicle or by the road.
 
-![](/home/prantik/Desktop/ComputerVision/GaussianMixtureModelling/ezgif-4-09ebca40c0a2.gif) 
+![](./resources/traffic.gif) 
 
 ### Gaussian Mixture Modelling (GMM)
 Gaussian Mixture Modelling is the method of modelling data as a weighted sum of Gaussians. 
@@ -30,14 +30,14 @@ GMMs are widely used to cluster data, where each point in the n-dimensional feat
 
 Each of these clusters are parameterized by the cluster mean (μ), the covarianves (Σ) and weights (π) as shown below:
 
-![](/home/prantik/Desktop/ComputerVision/GaussianMixtureModelling/gmm.png)
+![](./resources/gmm.png)
 
 Couple of recommended articles on Gaussian Mixture Modelling are provided in the reference section. It is recommended to read those articles to gain better understanding of how we will leverage GMMs for background modelling.
 
 ###Background Modelling
 Background modelling is the task of extracting the static background from a sequence of video frames. As shown in the video below, the background consists of the road which gets hidden occassionally owing to foreground variations caused by the moving vehicles. 
 
-![](/home/prantik/Desktop/ComputerVision/GaussianMixtureModelling/ezgif-4-09ebca40c0a2.gif) 
+![](./resources/traffic.gif) 
 
 The vehicles constitutes the foreground here and their dynamic nature accounts for the variation in intensity levels of points on the road.
 The end result of this exercise would be an image (frame) where there will be no vehicles, i.e, an image devoid of the dynamic foreground.
@@ -56,7 +56,7 @@ The step-wise approach is as follows:
 **Results:**
 The following image is obtained on successful execution of the algorithm described above:
 
-![](/home/prantik/Desktop/ComputerVision/GaussianMixtureModelling/background.png) 
+![](./resources/background.png) 
 
 Note that the image is devoid of any vehicles.
 
