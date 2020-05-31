@@ -67,5 +67,8 @@ Few of the incorrectly classified images are as shown below.
 ***
 
 ### References
+* https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf
+* https://www.learnopencv.com/histogram-of-oriented-gradients/
+* https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients
 
 
