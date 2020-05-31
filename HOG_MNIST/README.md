@@ -9,7 +9,7 @@ Prior to the era of CNNs, feature engineering was an important part of common Co
 
 A feature descriptor is a representation of the salient features in an image that can help classify the image from others. A good feature descriptor is one that is compact in the sense that it is representative of all the useful information present in the image while discarding others.  
 
-For the sake of simplicity, let us consider the image given below:
+For the sake of simplicity, let us consider the image given below:  
 <img src="resources/car.jpg" alt="drawing" width="300"/>
 
 Let us use Sobel derivatives to compute the edges in the x and y directions in the image above. The images below shows the edges in the horizontal and vertical directions as computed by using the Sobel kernel.
