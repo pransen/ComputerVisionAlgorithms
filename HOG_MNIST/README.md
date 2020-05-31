@@ -50,7 +50,7 @@ ReLU activation function is used for the non-linearity. A learning rate of 0.001
 ***
 
 ###Results
-A training accuracy of 99.96% and a test accuracy of 98.64% was obtained. The accuracy is pretty good considering the fact that using CNNs, which are more powerful and better suited for images, an accuracy of 99% has been obtained on the MNIST dataset.  
+A training accuracy of 99.96% and a test accuracy of 98.64% was obtained. The accuracy is pretty good considering the fact that using CNNs, which are more powerful and better suited for images, an accuracy of 99.79% has been obtained on the MNIST dataset.  
  
 Total number of images from the test dataset that were incorrectly classified were 136 out of 10000. 
 
