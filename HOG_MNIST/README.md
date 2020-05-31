@@ -20,7 +20,7 @@ Let us use Sobel derivatives to compute the edges in the x and y directions in t
 
 Looking at just the edges in the images above, one can still say that the image contains a car.   
 
-In this article we will be computing the Histogram of Oriented Gradients (HOG) features on the MNIST dataset and use them to train a fully connected neuran network.  
+In this article we will be computing the Histogram of Oriented Gradients (HOG) features on the MNIST dataset and use them to train a fully connected neural network.  
 
 ***
 ### MNIST Dataset
