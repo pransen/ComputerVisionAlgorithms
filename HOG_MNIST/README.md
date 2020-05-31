@@ -3,11 +3,11 @@
 ***
 
 ### Introduction
-With the advent of Convolutional Neural Networks (CNN) and Deep Learning, feature extractors are a part of the training setup where feature extractors are learnt by recursive implementation of chain rule in a fully differential setup.  
+With the advent of Convolutional Neural Networks (CNN) and Deep Learning, feature extractors are a part of the training setup where feature extractors (initial layers of a CNN) are learnt by recursive implementation of chain rule in a fully differential setup.  
 
 Prior to the era of CNNs, feature engineering was an important part of common Computer Vision tasks like image classification and object detection wherein, hand crafted features were used to extract meaningful features from an image.  
 
-A feature descriptor is a representation of the salient features in an image that can help classify the image from others. A good feature descriptor is one that is compact in the sense that it is representative of all the useful information present in the image while discarding others.  
+A feature descriptor is a representation of the salient features in an image that can help classify the image. A good feature descriptor is one that is compact in the sense that it is representative of all the useful information present in the image while discarding the less useful ones.  
 
 For the sake of simplicity, let us consider the image given below:  
 <img src="resources/car.jpg" alt="drawing" width="300"/>
