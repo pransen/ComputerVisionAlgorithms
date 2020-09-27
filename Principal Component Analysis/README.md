@@ -14,7 +14,7 @@ Dimensionality reduction techniques are widely employed to reduce the input feat
 
 Let us say that we have a 2-dimensional data as shown in the plot below:
 
-![image-20200927124053167](images\image-20200927124053167.png)
+![image-20200927124053167](images/image-20200927124053167.png)
 =======
 
 One can clearly see a linear dependence between the features x1 and x2. In other words, this data is highly correlated. 
@@ -23,13 +23,13 @@ What Principal Component Analysis does is to find and project the data into anot
 
 Let us say the after applying PCA, the original data is projected onto a space represented by X' as shown in the figure below:
 
-![image-20200927125218986](images\image-20200927125218986.png)
+![image-20200927125218986](images/image-20200927125218986.png)
 =======
 One can easily see that only a small fraction of the variance in the original data is captured when projected to the feature space X'. This implies that much of the original information is lost when projected to X'. 
 
 Now let us consider a direction perpendicular to X' as shown in the figure below.
 
-![image-20200927130335675](images\image-20200927130335675.png)
+![image-20200927130335675](images/image-20200927130335675.png)
 =======
 Clearly a much higher variance in the input data is retained when projected to X''. 
 
@@ -43,7 +43,7 @@ In general, **Principal Component Analysis** works by finding out the correlatio
 
 MNIST Dataset consists of 60000 images of hand written digits from 0-9. It is split into a training set consisting of 50000 images and a test set consisting of 10000 images. Each image is a grayscale image with a dimension of 28 x 28.
 
-![](images\mnist.png)
+![](images/mnist.png)
 =======
 
 
@@ -73,7 +73,7 @@ Total number of images from the test dataset that were incorrectly classified we
 
 Few of the incorrectly classified images are as shown below
 
-![download](images\download.png)
+![download](images/download.png)
 =======
 
 
