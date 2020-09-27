@@ -15,6 +15,7 @@ Dimensionality reduction techniques are widely employed to reduce the input feat
 Let us say that we have a 2-dimensional data as shown in the plot below:
 
 ![image-20200927124053167](images\image-20200927124053167.png)
+=======
 
 One can clearly see a linear dependence between the features x1 and x2. In other words, this data is highly correlated. 
 
@@ -23,15 +24,13 @@ What Principal Component Analysis does is to find and project the data into anot
 Let us say the after applying PCA, the original data is projected onto a space represented by X' as shown in the figure below:
 
 ![image-20200927125218986](images\image-20200927125218986.png)
-
+=======
 One can easily see that only a small fraction of the variance in the original data is captured when projected to the feature space X'. This implies that much of the original information is lost when projected to X'. 
 
 Now let us consider a direction perpendicular to X' as shown in the figure below.
 
 ![image-20200927130335675](images\image-20200927130335675.png)
-
-
-
+=======
 Clearly a much higher variance in the input data is retained when projected to X''. 
 
 In nutshell, Principal Component Analysis (PCA) will find the new feature space (X', X''), project the input data onto the new feature space and then discard the dimension which captures the least variance in the input data. Since the unit vectors along X' and X'' are perpendicular to each other, the new feature space is un-correlated. 
@@ -42,9 +41,10 @@ In general, **Principal Component Analysis** works by finding out the correlatio
 
 ### MNIST Dataset
 
-MNIST Dataset consists of 60000 images of hand written digits from 0-9. It is split into a trianing set consisting of 50000 images and a test set consisting of 10000 images. Each image is a grayscale image with a dimension of 28 x 28.
+MNIST Dataset consists of 60000 images of hand written digits from 0-9. It is split into a training set consisting of 50000 images and a test set consisting of 10000 images. Each image is a grayscale image with a dimension of 28 x 28.
 
 ![](images\mnist.png)
+=======
 
 
 
@@ -55,7 +55,7 @@ MNIST Dataset consists of 60000 images of hand written digits from 0-9. It is sp
 As discussed above, MNIST images are 28x28 which gives rise to a 784-dimensional feature space of intensity values between 0-255 when unrolled into a column vector. 
 
 Let us now use PCA from the scikit-learn library to lower the dimension such that 99% of the input data variance is captured.
-`***pca = PCA(0.99, svd_solver='auto')`***
+***pca = PCA(0.99, svd_solver='auto')***
 
 Using this, the input 784-dimensional data is projected onto a much lower 540-dimensional feature space which still is able to retain 99% of the input data variance.
 
@@ -74,6 +74,9 @@ Total number of images from the test dataset that were incorrectly classified we
 Few of the incorrectly classified images are as shown below
 
 ![download](images\download.png)
+=======
+
+
 
 ### Conclusion
 
